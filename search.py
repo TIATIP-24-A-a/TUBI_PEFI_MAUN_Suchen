@@ -1,6 +1,11 @@
 def searchText(text, searchText):
 
-    if len(text) > 3:
-        return 2
+    occurrences = 0
+    currentIndex = 0
+    while currentIndex < len(text):
+        if text[currentIndex] == searchText:
+            occurrences += 1
 
-    return 1
+        currentIndex += 1
+
+    return occurrences
