@@ -19,6 +19,9 @@ class SearchTextTestCase(unittest.TestCase):
         result = search.searchText("AABCABCA", "BC")
         self.assertEqual(2, result)
 
+    def test_searchText_empty_in_empty_expectOneOccurrence(self):
+        result = search.searchText("", "")
+        self.assertEqual(0, result)
 
 if __name__ == '__main__':
     unittest.main()
