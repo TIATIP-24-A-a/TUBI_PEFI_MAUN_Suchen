@@ -15,6 +15,10 @@ class SearchTextTestCase(unittest.TestCase):
         result = search.searchText("AABCAA", "BC")
         self.assertEqual(1, result)
 
+    def test_searchText_BC_in_AABCABCA_expectOneOccurrence(self):
+        result = search.searchText("AABCABCA", "BC")
+        self.assertEqual(2, result)
+
 
 if __name__ == '__main__':
     unittest.main()
