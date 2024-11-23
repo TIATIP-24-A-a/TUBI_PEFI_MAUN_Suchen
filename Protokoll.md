@@ -14,4 +14,7 @@
   - https://www.w3schools.com/python/python_variables.asp
 # 23.11.2024
 - Weitere Tests durchgeführt
+- Funktion refactored
 - Dokumentation
+- Github Workflow hinzugefügt
+- Mermaid Flowchart hinzugefügt
