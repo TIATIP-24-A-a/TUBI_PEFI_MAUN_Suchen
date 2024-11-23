@@ -23,5 +23,9 @@ class SearchTextTestCase(unittest.TestCase):
         result = search.searchText("", "")
         self.assertEqual(0, result)
 
+    def test_searchText_Reis_in_Apfel_expectOneOccurrence(self):
+        result = search.searchText("Apfel", "Reis")
+        self.assertEqual(0, result)
+
 if __name__ == '__main__':
     unittest.main()
