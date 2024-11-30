@@ -73,7 +73,8 @@ Diese Zeile sorgt dafür, dass der currentIndex um die Länge von searchText min
 ```python
 currentIndex += 1
 ```
-Dies erhöht den "currentIndex" um 1. Dies passiert nach jeder Iteration, unabhängig davon, ob ein Treffer gefunden wurde oder nicht. Dadurch wird die Schleife von einem Zeichen zum nächsten im Text bewegt.
+Dies erhöht den "currentIndex" um 1. Dies passiert nach jeder Iteration, unabhängig davon, ob ein Treffer gefunden wurde oder nicht. 
+Dadurch wird die Schleife von einem Zeichen zum nächsten im Text bewegt.
 
 # 8. Rückgabe der Anzahl der Vorkommen (Resultat)
 ```python
