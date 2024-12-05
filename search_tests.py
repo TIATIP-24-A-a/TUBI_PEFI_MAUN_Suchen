@@ -29,7 +29,7 @@ class SearchTextTestCase(unittest.TestCase):
 
     def test_searchText_Reis_in_DeineMutterkochtReis_expectOneOccurrence(self):
         result = search.searchText("Deine Mutter kocht Reis", "Reis")
-        self.assertEqual(2, result)
+        self.assertEqual(1, result)
 
     def test_searchText_Gedicht_in_String_expectOneOccurrence(self):
         result = search.searchText("Gedichte sind poetische Texte. Sie unterscheiden sich von anderen Texten durch ihren Rhythmus, die Verse und die oftmals bildliche Sprache. Ein Gedicht besteht aus mehreren Versen, die zu Strophen zusammengefasst werden. Oftmals reimen sich einzelne Verse; dies ist aber keine zwingende Voraussetzung für ein Gedicht.", "Gedicht")
