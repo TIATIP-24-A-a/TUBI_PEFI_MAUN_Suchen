@@ -17,11 +17,11 @@ Die Ziele und Bewertung sind der Aufgabe [Programmieren Grundlagen](https://gith
   - Beispiel: Wird im Text "ABBBC" nach "BB" gesucht, so ist die Häufigkeit 1 und nicht 2.
 - Es wird die Häufigkeit von der gesuchten Zeichenkette ausgegeben.
 
-# Aufbau
+# Projektstruktur
 
 Das Repository ist wie gefolgt aufgebaut:
 
-- `/`
+- `/`: Root
   - `search.py`: Die Suchfunktion
   - `search_tests.py`: Unit-Tests, welche die Suchfunktion testet
   - `.gitignore`: Ignorieren von Dateien im Git
@@ -46,8 +46,7 @@ Nach der Initialisierung der benötigen Variablen, wird ein Loop gestartet. Dies
 Bei jedem Loop durchgang wird Folgendes geprüft und ausgeführt:
 
 1. Handelt es sich bei der momentanen Indexposition vom Text plus die Länge vom gesuchten Text, um die Zeichenkette?
-
-Wenn ja, erhöhe die Häufigkeit um eins und erhöhe die Variable `currentIndex` um die Länge der gesuchten Zeichenkette minus eins.
+   - Wenn ja, erhöhe die Häufigkeit um eins und erhöhe die Variable `currentIndex` um die Länge der gesuchten Zeichenkette minus eins.
 
 2. Inkrementiere `currentIndex` um eins.
 
@@ -68,11 +67,11 @@ Für die detaillierte Implementation siehe `search_test.py`.
 
 Der Workflow auf Github führt die Tests durch und liefert das Ergebnis.
 
-Dieser wird momentan manuell ausgelöst, kann aber problemlos auf "on push" umgeschaltet werden, welches jedes ausgelöst sobald neue Änderungen im Hauptbranch gemerged sind.
+Dieser wird automatisch ausgeführt, sobald neue Änderungen hinzukommen. Eine manuelle Auslösung ist ebenfalls möglich.
 
 Der Ablauf ist wie gefolgt:
 
-1. Der Workflow wird manuell ausgelöst.
+1. Der Workflow wird ausgelöst (manuell oder automatisch).
 2. Das Repository wird geholt (checkout).
 3. Setup Python wird ausgeführt, welches die vorgegebene Python Version herunterlädt und einrichtet.
 4. Unit-Tests im `search_tests.py` werden ausgeführt.
