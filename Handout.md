@@ -7,7 +7,7 @@ Von Matthias Unternährer, Pedro Alexandre Almeida Figueiredo und Tuan Binh Tran
 Dieses Handout beschreibt unsere eigene Lösung zur Python-Aufgabe "Suchanalyse: Häufigkeit von Zeichenketten".
 Dabei sind unsere Funktion und Tests beschrieben. Auch unsere Gedanken sind festgehalten.
 
-Die Ziele und Bewertung sind der Aufgabe [Programmieren Grundlagen](https://github.com/fhirter/Software-Engineering/blob/master/ProgrammingBasicsAndAlgorithms/Exercises/Basics/Tasks.md) zu entnehmen.
+Die Ziele und Bewertung sind der Aufgabe Programmieren Grundlagen zu entnehmen: https://github.com/fhirter/Software-Engineering/blob/master/ProgrammingBasicsAndAlgorithms/Exercises/Basics/Tasks.md
 
 
 # Suchen: Anforderungen
@@ -19,7 +19,9 @@ Die Ziele und Bewertung sind der Aufgabe [Programmieren Grundlagen](https://gith
 
 # Projektstruktur
 
-Das Repository ist wie gefolgt aufgebaut:
+Das Repository ist im Github aufzufinden: https://github.com/TIATIP-24-A-a/TUBI_PEFI_MAUN_Suchen
+
+Beischreibung der Projektstruktur:
 
 - `/`: Root
   - `search.py`: Die Suchfunktion
@@ -52,8 +54,7 @@ Bei jedem Loop durchgang wird Folgendes geprüft und ausgeführt:
 
 Sobald der Loop durch ist, wird die `occurrences` zurückgegeben.
 
-[![](https://mermaid.ink/img/pako:eNplkklvwjAQhf_KaE6tWJREIZioVCrdoFJR1dJLSQ9WMhCriV0ZRyyB_94sgILqk2f0vTfPS46high9XCRqHcZcG5g9BBKKdXc1mb59zmBGGwNcRvBBXIdxWV5Dp3MLo_lECiN4InYEKgwzrUmGtIIhWJWg7piJjGhTNr9r41Glvs_XsUjoEroBU05LSC5NfKjx-xLfv_A9POYXcOvIgVrA6pwNhsNGdfR4PHs8zZtJW0Owj6meqlTP88sRTa_TuM5ZU9tOScg9jP8pT9Rz5Tyui3F9-ObRpmoPk6t3MpmWzXu8xjampFMuouKB8lISoIkppQD9Yhtx_RNgIA8FxzOjPrYyRN_ojNqoVbaM0V_wZFVU2W_EDT0IvtQ8PXd_ufxSKj1JKBJG6df6O4RKLsQSKwj9HDfo28ztOj2XMYfZTq-NW_SdftcbWGxgO16PeQPbPbRxV1laXeZazHP7vb5nWw7rs8MfmSnBCg?type=png)](https://mermaid.live/edit#pako:eNplkklvwjAQhf_KaE6tWJREIZioVCrdoFJR1dJLSQ9WMhCriV0ZRyyB_94sgILqk2f0vTfPS46high9XCRqHcZcG5g9BBKKdXc1mb59zmBGGwNcRvBBXIdxWV5Dp3MLo_lECiN4InYEKgwzrUmGtIIhWJWg7piJjGhTNr9r41Glvs_XsUjoEroBU05LSC5NfKjx-xLfv_A9POYXcOvIgVrA6pwNhsNGdfR4PHs8zZtJW0Owj6meqlTP88sRTa_TuM5ZU9tOScg9jP8pT9Rz5Tyui3F9-ObRpmoPk6t3MpmWzXu8xjampFMuouKB8lISoIkppQD9Yhtx_RNgIA8FxzOjPrYyRN_ojNqoVbaM0V_wZFVU2W_EDT0IvtQ8PXd_ufxSKj1JKBJG6df6O4RKLsQSKwj9HDfo28ztOj2XMYfZTq-NW_SdftcbWGxgO16PeQPbPbRxV1laXeZazHP7vb5nWw7rs8MfmSnBCg)
-
+<img src="./flowchart.svg" height="400px">
 
 # Unit Tests
 
@@ -64,7 +65,6 @@ Für die detaillierte Implementation siehe `search_test.py`.
 
 
 # Workflow: Python Test ausführen
-
 Der Workflow auf Github führt die Tests durch und liefert das Ergebnis.
 
 Dieser wird automatisch ausgeführt, sobald neue Änderungen hinzukommen. Eine manuelle Auslösung ist ebenfalls möglich.
@@ -82,7 +82,6 @@ Der Ablauf ist wie gefolgt:
 - Die Collaboration mit Git ohne Branches führt zu Probleme.
 
 # Quellen
-
 - Python For-Loops: https://www.w3schools.com/python/python_for_loops.asp
 - Iterating String using For Loop: https://sparkbyexamples.com/python/iterate-string-in-python-using-for-loop/
 - Python Functions: https://www.w3schools.com/python/python_functions.asp
